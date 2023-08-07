@@ -1,11 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    double h,w,BMI;
-    cin >> h;
-    cin >> w;
-    BMI = w / (h * h);
-    cout << fixed << setprecision(2) << BMI;
+    int num;
+    cin >> num;
+    int g = num / 100;
+    int s = (num / 10) % 10;
+    int b = num % 10;
+    int newNum = b * 100 + s * 10 + g;
+    cout << newNum;
     return 0;
 }
 

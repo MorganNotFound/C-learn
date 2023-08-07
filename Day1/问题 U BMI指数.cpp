@@ -1,13 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    float r,d,c,s,pi;
-    pi = 3.14159;
-    cin >> r;
-    d = 2*r;
-    c = 2*pi*r;
-    s = pi*r*r;
-    cout <<fixed<<setprecision(4)<<d<<" "<<c<<" "<<s;
+    double h,w,BMI;
+    cin >> h;
+    cin >> w;
+    BMI = w / (h * h);
+    cout << fixed << setprecision(2) << BMI;
     return 0;
 }
 
