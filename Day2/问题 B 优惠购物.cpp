@@ -1,17 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-	int a;
+	double a;
 	cin >> a;
-	if (a < 0) {
+	if(a<=1000){
 		//TODO
-		a = -1;
-	} else if (a > 0) {
+		a=0.95*a;
+	}else{
 		//TODO
-		a = 1;
-	} else {
-		//TODO
-		a = 0;
+		a=(a-1000)*0.9+950;
 	}
 	cout << a;
 	return 0;

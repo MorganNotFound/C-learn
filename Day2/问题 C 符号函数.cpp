@@ -1,63 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-	int a, b, c, num1, num2, num3;
-	cin >> a >> b >> c;
-	if (a < b) {
+	int a;
+	cin >> a;
+	if (a < 0) {
 		//TODO
-		if (b < c) {
-			//TODO
-			num2 = b;
-			num3 = c;
-			num1 = a;
-		} else {
-			//TODO
-			if (a < c) {
-				//TODO
-				num1 = a;
-				num2 = c;
-				num3 = b;
-			} else {
-				//TODO
-				num1 = c;
-				num2 = a;
-				num3 = b;
-			}
-		}
+		a = -1;
+	} else if (a > 0) {
+		//TODO
+		a = 1;
 	} else {
 		//TODO
-		if (b < c) {
-			//TODO
-			if (a < c) {
-				//TODO
-				num1 = b;
-				num2 = a;
-				num3 = c;
-			} else {
-				//TODO
-				num1 = b;
-				num2 = c;
-				num3 = a;
-			}
-		} else {
-			//TODO
-			num1 = c;
-			num2 = b;
-			num3 = a;
-		}
+		a = 0;
 	}
-	if (num1 + num2 <= num3) {
-		//TODO
-		cout << "Error!";
-	} else {
-		//TODO
-		if (num1 * num1 + num2 * num2 == num3 * num3) {
-			//TODO
-			cout << "Yes!";
-		} else {
-			//TODO
-			cout << "No!";
-		}
-	}
+	cout << a;
 	return 0;
 }
